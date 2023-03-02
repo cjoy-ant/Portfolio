@@ -1,0 +1,39 @@
+﻿@import "../_variables.scss";
+
+.profile {
+    grid-column-start: 1;
+    width: 100%;
+    max-width: 33%;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    background: $grey;
+    position: fixed;
+    top: 60px;
+
+    &-container {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        .image-container {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 400px;
+
+            img {
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+
+        .description {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 20px;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}

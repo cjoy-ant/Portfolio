@@ -1,0 +1,98 @@
+﻿@import "Shared/MainLayout";
+@import "Shared/Nav";
+@import "Shared/Profile";
+@import "Pages/Index";
+@import "Pages/Contact";
+@import "Pages/Projects";
+
+//fonts
+@font-face {
+    font-family: 'BrownSugar';
+    font-weight: 400;
+    src: url(wwwroot/fonts/BrownSugar.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSerifDisplay-Regular';
+    font-weight: 400;
+    src: url(wwwroot/fonts/DMSerifDisplay-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSerifDisplay-Italic';
+    font-weight: 400;
+    font-style: italic;
+    src: url(wwwroot/fonts/DMSerifDisplay-Italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gloock';
+    font-weight: 400;
+    src: url(wwwroot/fonts/Gloock.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Millane';
+    font-weight: 400;
+    src: url(wwwroot/fonts/Millane.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 400;
+    src: url(wwwroot/fonts/Raleway.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-Italic';
+    font-weight: 400;
+    font-style: italic;
+    src: url(wwwroot/fonts/Raleway-Italic.ttf) format('truetype');
+}
+
+body {
+    font-family: 'Raleway';
+    font-size: 16px;
+}
+
+//typography
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Gloock';
+    line-height: 120%;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p {
+    line-height: 130%;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-brown;
+    transition: ease-in-out 100ms;
+
+    &:hover {
+        color: $dark-tan;
+    }
+}
