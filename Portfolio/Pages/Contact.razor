@@ -1,0 +1,49 @@
+﻿@page "/contact"
+
+<div class="contact">
+    <Profile />
+    <div class="contact-container">
+        <h1>Let's connect!</h1>
+        <div class="wrapper">
+            <section class="contact-form">
+                <form action="https://formsubmit.co/e73dd92229c27eeb5e6e0981a5ae42ba" method="POST" target="_blank">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;" />
+
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false" />
+
+                    <div class="name-wrapper">
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="First&nbsp;Name" id="firstName" required />
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="Last&nbsp;Name" id="lastName" />
+                        </div>
+                    </div>
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" id="email" required>
+                    <label for="subject">Subject</label>
+                    <input type="text" name="Subject" id="subject" />
+                    <br />
+                    <label for="message">Message</label>
+                    <textarea name="Message" id="message" placeholder="Your message..." />
+                    <button type="submit" class="send-btn">Send</button>
+                </form>
+            </section>
+            <section class="contact-links">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/cjoyantonio" target="_blank"><LinkedinIcon /> LinkedIn</a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/cjoy-ant" target="_blank"><GithubIcon /> GitHub</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+@code {
+}

@@ -1,0 +1,85 @@
+﻿@import "../_variables.scss";
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 33% [col-start]);
+
+    .sidebar {
+        grid-column-start: 1;
+        width: 100%;
+        max-width: 33%;
+        height: calc(100vh - 60px);
+        padding: 20px;
+        background: $grey;
+        position: fixed;
+        top: 60px;
+
+        &-container {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            margin: 0 auto;
+            width: 87%;
+            text-align: center;
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    &-container {
+        grid-column-start: 2;
+        grid-column-end: end;
+        padding: 40px;
+        padding-bottom: 60px;
+        background: $white;
+        box-shadow: inset 0 0 20px lightgrey;
+    }
+
+    .project {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 20px;
+
+        &.even {
+            flex-direction: row-reverse;
+        }
+
+        h2 {
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Raleway';
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        .image-wrapper {
+            width: 100%;
+            text-align: center;
+            margin: auto 0;
+
+            img {
+                width: 100%;
+                max-width: 300px;
+                border-radius: 8px;
+                margin: auto 0;
+            }
+        }
+
+        .content-wrapper {
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    }
+}

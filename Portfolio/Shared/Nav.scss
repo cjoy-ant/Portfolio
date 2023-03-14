@@ -1,0 +1,52 @@
+﻿@import "../_variables.scss";
+
+nav {
+    width: 100vw;
+    padding: 6px 40px;
+    background: $grey;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+
+    a {
+        &.home {
+            font-family: 'BrownSugar';
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .links {
+        margin: auto 0;
+        display: flex;
+        gap: 20px;
+
+        a {
+            margin: auto 0;
+        }
+
+        .contact-btn {
+            padding: 3px 15px;
+            border: none;
+            border-radius: 6px;
+            background: $tan;
+            color: $white;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 0.6px;
+            transition: ease-in-out 100ms;
+
+            &:hover {
+                background: #C6936A;
+                transform: translateY(-1px);
+                box-shadow: 0 2px 10px #92633D;
+            }
+
+            &:active {
+                transform: translateY(1px);
+                box-shadow: inset 1px 1px 20px #92633D;
+            }
+        }
+    }
+}
